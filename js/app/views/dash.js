@@ -5,7 +5,7 @@ define([
 ] , function ($ , _ , Backbone) {
     'use strict';
 
-    var AboutView = Backbone.View.extend({
+    var DashView = Backbone.View.extend({
      
         initialize: function () {
 
