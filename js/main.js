@@ -27,10 +27,10 @@ require.config({
 });
 
 require([
-    'backbone' 
-] , function (Backbone) {
+    'backbone' , 
+    'js/app/app'
+] , function (Backbone, App) {
     'use strict';
 
-    console.log(Backbone);
-
+    App.initialize();
 });
