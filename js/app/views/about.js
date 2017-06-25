@@ -8,7 +8,7 @@ define([
     var AboutView = Backbone.View.extend({
      
         initialize: function () {
-
+            
         } ,
         events: {
 

@@ -1,13 +1,17 @@
 define([
-    'js/app/views/app'
+    'backbone' , 
+    'js/app/views/app' , 
+    'js/app/routes/router'
 ],
-    function ( AppView) {
+    function (Backbone ,  AppView , Router) {
         'use strict';
 
     
         var initialize = function () {
             var appView = new AppView();
             $('body').append(appView.el);
+            var router = new Router(appView);
+            Backbone.history.start();
         };
 
         return {
